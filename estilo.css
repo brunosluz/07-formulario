@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: #ffffff;
+    color: grey;
+    font-size: 16px;
+    font-family: arial;
+}
+
+h1 {
+    background-color: #4251dd;
+    color:#FFFFFF;
+    text-align: center;
+    padding: 30px;
+}
+
+/* AULA 7 - FORMULÁRIO NA PRÁTICA */
+
+.container {
+    /* background-color: #4251dd; */
+    width: 490px;
+    margin: 6% auto 0;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px 1px #c2c2c2;
+}
+
+/* Cabeçalho do formulário */
+.form-head {
+    /* background-color: brown; */
+    border-bottom: 1px solid #d2d2d2;
+    border-radius: 10px 10px 0 0;
+}
+
+.form-head h2 {
+    display: inline-block;
+    color: #000000;
+    padding: 20px 0 5px 20px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.form-head p {
+    padding: 0 0 15px 20px;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.form-head a {
+    /* background-color: red; */
+    color: hsl(0, 0%, 37%);
+    display: inline-block;
+    /* float: right; */
+    margin-left: 50%;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+/* final Cabeçalho do formulário */
+
+/* Formulário */
+form {
+    /* background-color: orange; */
+    color: #6d6d6d;
+    margin: 15px 20px;
+}
+
+form input {
+    background-color: hsl(0, 0%, 97%);
+    margin: 5px 0;
+}
+
+form select  {
+    background-color: #ffffff;
+
+}
+form input, form select  { 
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #c2c2c2;    
+}
+
+#nome, #sobrenome {
+    width: 44%;
+    display: inline;
+    padding: 14px 10px;
+}
+
+#sobrenome {
+    float: right; /* alinhar perfeitamente a direita */
+}
+
+#email, #senha {
+    display: inline-flex;
+    width: 95%;
+    padding: 14px 10px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 2px;
+    /* background-color: red; */
+}
+
+/*** ícone ajuda ? ***/
+form a{
+    background-color: #6d6d6d;
+    color: #ffffff;
+    font-size: .7rem;
+    text-decoration: none;
+    border-radius: 100%;
+    padding: 0.1% 0.7% 0.05%;
+}
+/*** fim ícone ajuda ? ***/
+
+select {
+    background-color: #ffffff;
+    padding: 10px;
+    width: 31%;
+    margin-right: 11px;
+}
+
+select option {
+    background-color: #ffffff;
+}
+
+#ano {
+    float: right;
+    margin: 0;
+}
+
+/*** Container Gênero ****/
+
+.genero {
+    display: inline-block;
+    color: #000000;
+    background-color: #ffffff;
+    padding: 6px 10px 9px;
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+    /* background-color: blueviolet; */
+    /* margin: 0 1px 0 2px; */
+}
+
+/* .genero:nth-child(2) {
+    margin: 0 12px;
+} */
+
+.genero label {
+    display: inline-block;
+    padding-right: 16px;
+    /* background-color: red; */
+}
+
+.genero input {
+    width: 18px;
+    height: 18px;
+}
+
+/* 1 - Solução temporária para alinhamento "perfeito" foi aplicar a regra diretamente na tag div do container dois com <style>, minha pergunta é, uma solução "elegante" seria criar uma classe só para esse container? teria uma outra ideia melhor? */
+
+/* 2 - Pesquisando no W3C, encontrei a pseudo-class: nth-child(2), era para dar certo e alinhar perfeitamente o container central, mas também sem sucesso :(*/
+/* .genero:nth-child(2){
+    margin: 0 6px;
+} */
+
+/*** Final Container Gênero  ***/
+.politica-dados {
+    margin-top: 5px;
+    font-size: 0.7rem;
+}
+
+.politica-dados a{
+    color: #4251dd;
+    text-decoration: none;
+    padding: 0;
+    border-radius: 0;
+    background-color: #ffffff;
+}
+
+/* 3 - Mesmo definindo uma valor de largura fixa para button, o alinhamento do margin com os valores right e left em auto do button, o valor não está sendo aplicado, por isso coloquei o em margin-left: 25%, minha pergunta, porque o valor auto não "funciona"? */
+
+#btnCadastrar {
+    display: inline-block;
+    padding: 8px 50px;
+    background-color: rgb(36, 170, 36);
+    color: #ffffff;
+    border: 1px solid rgb(36, 170, 36);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 20px 0 30px 25%;
+    /* width: 220px; */ 
+    /* height: 40px; */
+    /* margin: 20px auto 30px; */
+}
+
+#btnCadastrar:hover {
+    background-color: rgb(36, 130, 36);
+    border: 1px solid rgb(36, 130, 36);
+}
