@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <h1>Aula 7 - Formulário na Prática (Form do Facebook)</h1>
+
+    <div class="bg-form">
+
+        <div class="form-head">
+            <h2>Cadastre-se</h2>
+            <a href="#">X</a>                
+            <p>É rápido e fácil.</p>
+        </div>
+
+        <form action="">
+
+            <input type="text" name="nome" id="nome" placeholder="Nome" required>
+            <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
+            <input type="email" name="email" id="email" placeholder="Celular ou Email" required>
+            <input type="password" name="senha" id="senha" placeholder="Nova senha" required>
+
+            <label>Data de nascimento <a href="#" alt="Clique aqui para mais informações" title="Clique para mais informações">?</a></label>
+
+            <div class="flex-container">            
+                <select name="dia" id="dia" required>
+                    <option value="">Dia</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7" selected>7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>  
+                </select>
+
+                <select name="mes" id="mes" required>
+                    <option value="">Mês</option>
+                    <option value="jan">Jan</option>
+                    <option value="fev">Fev</option>
+                    <option value="mar">Mar</option>
+                    <option value="abr">Abr</option>
+                    <option value="mai">Mai</option>
+                    <option value="jun">Jun</option>
+                    <option value="jul">Jul</option>
+                    <option value="ago">Ago</option>
+                    <option value="set">Set</option>
+                    <option value="out" selected>Out</option>
+                    <option value="nov">Nov</option>
+                    <option value="dez">Dez</option>
+                </select>
+
+                <select name="ano" id="ano" required>
+                    <option value="">Ano</option>
+                    <option value="2021" selected>2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                    <option value="2011">2011</option>
+                    <option value="2010">2010</option>
+                    <option value="2009">2009</option>
+                    <option value="2008">2008</option>
+                    <option value="2007">2007</option>
+                    <option value="2006">2006</option>
+                    <option value="2005">2005</option>
+                    <option value="2004">2004</option>
+                    <option value="2003">2003</option>
+                    <option value="2002">2002</option>
+                    <option value="2001">2001</option>
+                    <option value="2000">2000</option>
+                </select>
+            </div>
+
+            <label>Gênero <a href="#" alt="Clique aqui para mais informações" title="Clique para mais informações">?</a></label>
+
+            <div class="flex-container">
+                <div class="flex-item">
+                    <label for="genero">Feminino</label>
+                    <input type="radio" name="genero" id="genero" value="Feminino" required>
+                </div>    
+                
+                <div class="flex-item">
+                    <label for="genero">Masculino</label>
+                    <input type="radio" name="genero" id="genero" value="Masculino" required>
+                </div>
+
+                <div class="flex-item">
+                    <label for="genero">Personalizado</label>
+                    <input type="radio" name="genero" id="genero" value="Personalizado" required>
+                </div>
+            </div>
+
+            <div class="politica-dados">
+                Ao clicar em Cadastre-se, você concorda com nossos <a href="#">Termos</a>, <a href="#">Política de Dados</a> e <a href="#">Política de Cookies</a>. Você poderá receber notificações por SMS e cancelar isso quando quiser.
+            </div>
+
+             <!-- <input type="file" name="" id=""> -->
+
+             <button id="btnCadastrar" type="submit">Cadastre-se</button>
+             <!-- <input id="btnCadastrar" type="submit" value="Cadastre-se"> -->
+
+        </form>
+
+        
+
+    </div>
+
+</body>
+</html>

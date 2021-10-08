@@ -7,27 +7,29 @@ html{
     background-color: #ffffff;
     color: grey;
     font-size: 16px;
+    font-weight: 500;
     font-family: arial;
 }
 
 h1 {
     background-color: #4251dd;
     color:#FFFFFF;
+    font-size: 2rem;
+    font-weight: bold;
     text-align: center;
     padding: 30px;
+    margin: 0;
 }
 
-/* AULA 7 - FORMULÁRIO NA PRÁTICA */
-
-.container {
+.bg-form {
     /* background-color: #4251dd; */
-    width: 490px;
+    width: 470px;
     margin: 6% auto 0;
     border-radius: 10px;
     box-shadow: 0px 10px 15px 1px #c2c2c2;
 }
 
-/* Cabeçalho do formulário */
+/*  Início Cabeçalho do formulário */
 .form-head {
     /* background-color: brown; */
     border-bottom: 1px solid #d2d2d2;
@@ -52,16 +54,14 @@ h1 {
     /* background-color: red; */
     color: hsl(0, 0%, 37%);
     display: inline-block;
-    /* float: right; */
     margin-left: 50%;
     text-decoration: none;
     font-weight: bolder;
     font-size: 1.5rem;
 }
-
 /* final Cabeçalho do formulário */
 
-/* Formulário */
+/* Inicio INPUTS */
 form {
     /* background-color: orange; */
     color: #6d6d6d;
@@ -73,11 +73,7 @@ form input {
     margin: 5px 0;
 }
 
-form select  {
-    background-color: #ffffff;
-
-}
-form input, form select  { 
+form input, form select { 
     font-size: 1rem;
     border-radius: 5px;
     border: 1px solid #c2c2c2;    
@@ -90,7 +86,7 @@ form input, form select  {
 }
 
 #sobrenome {
-    float: right; /* alinhar perfeitamente a direita */
+    float: right; 
 }
 
 #email, #senha {
@@ -98,14 +94,15 @@ form input, form select  {
     width: 95%;
     padding: 14px 10px;
 }
+/* Final INPUTS */
 
+/* Início LABELs do SELECT e RADIO*/
 form label {
     display: block;
-    margin: 10px 0 2px;
+    margin: 10px 0 3px;
     /* background-color: red; */
 }
 
-/*** ícone ajuda ? ***/
 form a{
     background-color: #6d6d6d;
     color: #ffffff;
@@ -114,77 +111,86 @@ form a{
     border-radius: 100%;
     padding: 0.1% 0.7% 0.05%;
 }
-/*** fim ícone ajuda ? ***/
+/* Final LABELs do SELECT e RADIO*/
 
+/* Início SELECT */
 select {
+    display: flex;
     background-color: #ffffff;
-    padding: 10px;
-    width: 31%;
-    margin-right: 11px;
+    padding: 10px 10px;
+    width: 32%;
+    margin-right: 3%;
 }
 
 select option {
     background-color: #ffffff;
 }
 
-#ano {
+select:last-child {
     float: right;
-    margin: 0;
+    margin-right: 0px;
+}
+/* Final SELECT */
+
+/* Início RADIO */
+.flex-container {
+    display: flex;
+    width: 100%;
+    /* background-color:darksalmon; */
 }
 
-/*** Container Gênero ****/
-
-.genero {
-    display: inline-block;
+.flex-item {
+    width: 100%;
+    display: flex;
     color: #000000;
     background-color: #ffffff;
-    padding: 6px 10px 9px;
+    padding: 7px 10px;
     border: 1px solid #c2c2c2;
     border-radius: 5px;
+    margin: 0 3% 0 0;
     /* background-color: blueviolet; */
-    /* margin: 0 1px 0 2px; */
 }
 
-/* .genero:nth-child(2) {
-    margin: 0 12px;
-} */
+.flex-item:last-child {
+    float: right;
+    margin-right: 0px;
+}
 
-.genero label {
-    display: inline-block;
-    padding-right: 16px;
+.flex-item label {
+    padding: 6px 16px 0 0px;
+    margin: 0 0 0 0;
     /* background-color: red; */
 }
 
-.genero input {
-    width: 18px;
-    height: 18px;
+.flex-item input {
+    width: 17px;
+    height: 17px;
+    background-color: yellow;
 }
 
-/* 1 - Solução temporária para alinhamento "perfeito" foi aplicar a regra diretamente na tag div do container dois com <style>, minha pergunta é, uma solução "elegante" seria criar uma classe só para esse container? teria uma outra ideia melhor? */
-
-/* 2 - Pesquisando no W3C, encontrei a pseudo-class: nth-child(2), era para dar certo e alinhar perfeitamente o container central, mas também sem sucesso :(*/
-/* .genero:nth-child(2){
-    margin: 0 6px;
-} */
-
-/*** Final Container Gênero  ***/
 .politica-dados {
-    margin-top: 5px;
+    width: 100%;
+    display: block;
     font-size: 0.7rem;
+    margin-top: 10px;
+    /* background-color: darkgreen; */
 }
 
 .politica-dados a{
     color: #4251dd;
     text-decoration: none;
     padding: 0;
-    border-radius: 0;
     background-color: #ffffff;
 }
+/* Final RADIO*/
 
-/* 3 - Mesmo definindo uma valor de largura fixa para button, o alinhamento do margin com os valores right e left em auto do button, o valor não está sendo aplicado, por isso coloquei o em margin-left: 25%, minha pergunta, porque o valor auto não "funciona"? */
+/* 1 - Mesmo definindo uma valor de largura e altura fixa para button, o alinhamento do margin com os valores right e left em "auto", esse o valor não está sendo aplicado, então só sobrou a alternativa de colocar margin-left: 25% */
+
+/* a - Minha pergunta é, porque o valor auto não "funciona"? */
+
+/* b - No teste com o display: flex e block (linhas 208 e 209), ele até centraliza, porém o margin: bottom não dá o espaçamento; Quando testo com o display: inline-flex ou inline-block, ele o margin dá o espaçamento definido, porém não centraliza... */
 
 #btnCadastrar {
-    display: inline-block;
     padding: 8px 50px;
     background-color: rgb(36, 170, 36);
     color: #ffffff;
@@ -192,10 +198,15 @@ select option {
     border-radius: 5px;
     font-size: 1.2rem;
     font-weight: 600;
-    margin: 20px 0 30px 25%;
-    /* width: 220px; */ 
-    /* height: 40px; */
-    /* margin: 20px auto 30px; */
+   
+    /* width: 220px; 
+    height: 40px; */
+    /* margin: 20px auto 20px; */
+   
+    /* margin: 20px 0 25px 25%; */
+   
+    display: inline-flex;
+    margin: 20px auto;  
 }
 
 #btnCadastrar:hover {
