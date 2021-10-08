@@ -182,13 +182,6 @@ select:last-child {
     padding: 0;
     background-color: #ffffff;
 }
-/* Final RADIO*/
-
-/* 1 - Mesmo definindo uma valor de largura e altura fixa para button, o alinhamento do margin com os valores right e left em "auto", esse o valor não está sendo aplicado, então só sobrou a alternativa de colocar margin-left: 25% */
-
-/* a - Minha pergunta é, porque o valor auto não "funciona"? */
-
-/* b - No teste com o display: flex e block (linhas 208 e 209), ele até centraliza, porém o margin: bottom não dá o espaçamento; Quando testo com o display: inline-flex ou inline-block, ele o margin dá o espaçamento definido, porém não centraliza... */
 
 #btnCadastrar {
     padding: 8px 50px;
@@ -198,15 +191,7 @@ select:last-child {
     border-radius: 5px;
     font-size: 1.2rem;
     font-weight: 600;
-   
-    /* width: 220px; 
-    height: 40px; */
-    /* margin: 20px auto 20px; */
-   
-    /* margin: 20px 0 25px 25%; */
-   
-    /* display: inline-flex; */
-    margin: 20px auto;  
+    margin: 20px auto 25px;  
 }
 
 #btnCadastrar:hover {
